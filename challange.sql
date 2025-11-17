@@ -38,3 +38,25 @@ LIMIT 5;
 
 
 --- Task 2: 
+
+WITH line_totals AS (
+    -- 1) item-level line totals
+    SELECT
+        oi.product_id,
+        oi.quantity * oi.unit_price AS line_total
+    FROM order_items AS oi
+)
+SELECT
+    p.category,                          
+    SUM(lt.line_total) AS revenue
+FROM line_totals AS lt
+JOIN products AS p
+    ON lt.product_id = p.id              
+GROUP BY
+    p.category
+ORDER BY
+    revenue DESC;
+
+
+---Task Three:
+
