@@ -86,5 +86,27 @@ ORDER BY
 
 
 
+-- Task Four — Cities with the Most Loyal Customers (Gold Only)
+SELECT
+    city,
+    COUNT(*) AS gold_customer_count
+FROM customers
+WHERE loyalty_level = 'Gold'
+GROUP BY city
+ORDER BY
+    gold_customer_count DESC,
+    city ASC;
 
- 
+
+ -- Task Four  — Loyalty Distribution by City
+SELECT
+    city,
+    SUM(CASE WHEN loyalty_level = 'Gold' THEN 1 ELSE 0 END)   AS gold_count,
+    SUM(CASE WHEN loyalty_level = 'Silver' THEN 1 ELSE 0 END) AS silver_count,
+    SUM(CASE WHEN loyalty_level = 'Bronze' THEN 1 ELSE 0 END) AS bronze_count,
+    COUNT(*) AS total_customers
+FROM customers
+GROUP BY city
+ORDER BY
+    gold_count DESC,
+    city ASC;
