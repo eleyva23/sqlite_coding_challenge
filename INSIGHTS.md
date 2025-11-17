@@ -29,7 +29,7 @@ Tampa is showing for our most loyal customers in the gold bracket making up for 
 
 For marketing insights we have no other gold customers other than oin Tampa. This suggestion that we should market more the South Florida regions for cities like Sarasota and St.Petersburg. I also suggest we focus on more marketing for the state of Florida to raise our gold customers numbers. 
 
-Tools Used 
+
 
 
 
