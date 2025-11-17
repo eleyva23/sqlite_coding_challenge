@@ -7,7 +7,7 @@ WITH line_totals AS (
     FROM order_items AS oi
 ),
 order_totals AS (
-    -- 2) roll up to order-level totals
+   
     SELECT
         lt.order_id,
         SUM(lt.line_total) AS order_total
@@ -15,7 +15,7 @@ order_totals AS (
     GROUP BY lt.order_id
 ),
 customer_totals AS (
-    -- 3) roll up to customer-level totals
+    
     SELECT
         o.customer_id,
         SUM(ot.order_total) AS total_spend

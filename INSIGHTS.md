@@ -1,3 +1,14 @@
+Tools Used for Challange.sql
+Tool Used: Visual Studio Code with the SQLTools SQLite extension connected to baisdata.db.
+-- Validation Approach:
+--   1. Verified table schemas using PRAGMA table_info(table_name) to ensure correct column names.
+--  2. inspected output via the SQLTools results panel.
+ --3. Used code such as (SUM, COUNT, AVG) by manually re-running filtered queries 
+   to confirm accuracy of groupings and calculations.
+ Ensured consistency by comparing results against expected rankings and totals for each task.
+ --4. alsu used "run query" to ensure each step ran seamlessly 
+
+
 Task One- Top 5 Customers With Lifetime Spend 
 Jacob Foster is the highets spender with speniding $8,722.67 followed by Ethan Gomesz at $8,206.19.
 
@@ -17,5 +28,8 @@ Task Four- Cities with the most loyal customers
 Tampa is showing for our most loyal customers in the gold bracket making up for four customers in that area. follwoing Brandon with only one sutomer in the silver bracket. This indicates that we have a main clinetel based in the tampa bay area. Showing a favoritism for the south Florida region.
 
 For marketing insights we have no other gold customers other than oin Tampa. This suggestion that we should market more the South Florida regions for cities like Sarasota and St.Petersburg. I also suggest we focus on more marketing for the state of Florida to raise our gold customers numbers. 
+
+Tools Used 
+
 
 
