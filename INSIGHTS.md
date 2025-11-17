@@ -6,7 +6,7 @@ Tool Used: Visual Studio Code with the SQLTools SQLite extension connected to ba
  --3. Used code such as (SUM, COUNT, AVG) by manually re-running filtered queries 
    to confirm accuracy of groupings and calculations.
  Ensured consistency by comparing results against expected rankings and totals for each task.
- --4. alsu used "run query" to ensure each step ran seamlessly 
+ --4. also used "run query" to ensure each step ran seamlessly 
 
 
 Task One- Top 5 Customers With Lifetime Spend 
